@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+#navbar {
+    background-color: #333;
+    position: fixed;
+    top: -75px;
+    width: 100%;
+    display: block;
+    transition: top 0.5s;
+  }
+  
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('./imgs/background.jpg');
+    background-size: cover;
+    color: rgb(167, 21, 21);
+    font-weight: bold;
+}
+.jumbotron h2 {
+    color:rgb(202, 82, 82);
+}
