@@ -16,7 +16,6 @@ html {
     transition: top 0.5s;
     z-index: 10;
 }
-  
 #navbar a {
     float: left;
     display: block;
@@ -39,8 +38,11 @@ html {
     height: 100vh;
     background-image: url('./imgs/background.jpg');
     background-size: cover;
-    color: rgb(167, 21, 21);
     font-weight: bold;
+}
+.jumbotron h1 {
+    color: rgb(167, 21, 21);
+    font-size: 72px;
 }
 .jumbotron h2 {
     color:rgb(202, 82, 82);
@@ -49,13 +51,36 @@ html {
 .blue {
     background-color: aliceblue;
 }
+.dark-blue {
+    background-color: rgb(46, 46, 104);
+}
 .container-fluid {
     padding: 11vh 10vw;
+}
+.container-fluid h1 {
+    font-size: 42px;
+    color: #4747d1;
+}
+.container-fluid h2 {
+    color: #17a717;
+    font-size: 32px;
+}
+.container-fluid h3 {
+    margin: 0;
+    font-weight: 700;
 }
 .content {
     margin: 0 10vw;
 }
 
 .special {
-    border: 1.5px solid rgb(202, 82, 82);;
+    border: 1.5px solid #4db8ff;
+}
+.text {
+    font-size: 17px; 
+    line-height: 1.4;
+}
+#experiences .row {
+    margin-top: 5.5vh;
+    margin-bottom: 5.5vh;
 }
