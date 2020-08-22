@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+    <!--FontAwesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" 
     integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" 
     crossorigin="anonymous" />
@@ -18,19 +18,28 @@
     <title>Bill's Personal Website</title>
 </head>
 <body>
+    <!-- <div id="navbar">
+        <a href="#about-me" data-scroll="about-me">About</a>
+        <a href="#education" data-scroll="education">Education</a>
+        <a href="#skills" data-scroll="skills">Skills</a>
+        <a href="#experiences" data-scroll="experiences">Experiences</a>
+        <a href="#" data-scroll="projects">Projects</a>
+        <a href="#" data-scroll="contact">Contact</a>
+    </div> -->
     <div id="navbar">
-        <a href="#about-me">About Me</a>
-        <a href="#experiences">Experiences</a>
+        <a href="#about-me" >About</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
+        <a href="#experiences">Experiences</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </div>
     <div class="jumbotron">
         <div class="text-center" style="position:relative; bottom: 6vh;">
             <h1>Bill Sun</h1>
-            <h2><span>Data Scientist </span>|<span> AI Researcher </span>|<span> Software Engineer </span></h2>
+            <h2>Data Scientist | AI Researcher | Software Engineer </h2>
             <h2 style="margin-top: 0;">Interactive Resumé</h2>
-            <h2 class="icons">
+            <h2 class="icons" style="margin-top: 40px; font-size: 30px;">
                 <a href="https://www.linkedin.com/in/bill-sun-83ab771a5/"><i class="fab fa-linkedin"></i></a> 
                 <a href="mailto:bys2107@columbia.edu"><i class="fas fa-envelope"></i></a>
                 <a href="https://github.com/billsun9"><i class="fab fa-github"></i></a>
@@ -40,89 +49,394 @@
     </div>
     <div class="container-fluid blue" id="about-me">
         <div class="content">
-            <h1 class="text-center">About</h1>
+            <h1 class="text-center">About Me</h1>
             <hr class="special">
             <div class="row">
-                <div class="col-sm-8 text">
-                    Hi! I’m Bill Sun. I’m a first-year undergraduate student at Columbia University interested in pursuing a career at the crossroads of computer science, biomedical engineering, and healthcare. Currently, my main research interests involve the application of machine learning and deep learning techniques to improve human healthcare. I strive to integrate my knowledge of web development with my understanding of machine learning to create easily-accessible and accurate diagnostic processes to assist patients afflicted with various diseases. In my free time, I enjoy cooking and playing ping pong.</div>
-                <div class="col-sm-4"><img class="img-responsive img-rounded" src="./imgs/profile_pic.jpg" alt="Bill"></div>
+                <div class="col-sm-8 text" style="font-size: 15px;">
+                    Hi! I’m Bill Sun. I’m a first-year undergraduate student at Columbia University interested 
+                    in pursuing a career at the crossroads of computer science, biomedical engineering, and 
+                    healthcare. Currently, my main research interests involve the application of machine learning 
+                    and deep learning techniques to improve human healthcare. I strive to integrate my knowledge 
+                    of web development with my understanding of machine learning to create easily-accessible and 
+                    accurate diagnostic processes to assist patients afflicted with various diseases. In my free 
+                    time, I enjoy cooking and playing ping pong.</div>
+                <div class="col-sm-4"><img class="img-responsive img-rounded" src="./imgs/pfp2.jpg" alt="Bill"></div>
             </div>
-            <div class="row text-center"><a href="https://billsun9.github.io/cv.pdf"target="_blank">Download CV <i class="far fa-file"></i></a></div>
-            
+            <br>
+            <div class="row text-center">
+                <a href="https://billsun9.github.io/cv.pdf" target="_blank">
+                    <button class="cv">
+                        Download CV <i class="far fa-file" style="padding-left: 12px;"></i>
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="container-fluid" id="experiences">
+    <div class="container-fluid grey" id="education">
+        <div class="content">
+            <h1 class="text-center">Education</h1>
+            <hr class="special">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Columbia University</h3>
+                    <div class="text">Aug 2020 - May 2024</div>
+                    <div class="text">New York City, NY</div>
+                </div>
+                <div class="col-sm-8">
+                    <h3>B.S. Degree (In Progress)</h3>
+                    <!-- <div class="text">GPA: 4.0/4.0</div> -->
+                    <div class="text">Enrolled in the Fu Foundation School of Engineering and Applied Science (SEAS). Intended Major: Computer Science</div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Georgia Institute of Technology</h3>
+                    <div class="text">Aug 2018 - May 2020</div>
+                    <div class="text">Atlanta, GA</div>
+                </div>
+                <div class="col-sm-8">
+                    <h3>Dual Enrollment Program</h3>
+                    <div class="text">GPA: 4.0/4.0</div>
+                    <div class="text">Selected Coursework: MATH 1554 (Linear Algebra), MATH 2551 (Multivariable Calculus), MATH 3012 (Applied Combinatorics),
+                    and MATH 2552 (Differential Equations)</div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Walton High School</h3>
+                    <div class="text">Aug 2016 - May 2020</div>
+                    <div class="text">Marietta, GA</div>
+                </div>
+                <div class="col-sm-8">
+                    <h3>High School Diploma</h3>
+                    <div class="text">GPA: 4.0/4.0</div>
+                    <div class="text">Activities and Societies: Math Honor Society, Science National Honor Society, Cryptocurrency Club, Chinese Language and Culture Society, Model UN, Walton Community Outreach</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid blue" id="skills">
+        <div class="content">
+            <h1 class="text-center">Skills</h1>
+            
+            <hr class="special">
+            <!-- <div class="text">I have experience with Machine learning</div> -->
+            <h2>Languages and Frameworks</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="no-bullets text">
+                        <li>
+                            <span class="skill-title">Python</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-title">HTML(5)</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-title">Javascript</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-title">React.js</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-title">MATLAB</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-title">Bootstrap</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="no-bullets text">
+                        <li>
+                            <span class="skill-title">CSS</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-title">Node.js</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-title">Java</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-title">SQL</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-title">Angular.js</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-title">Vue.js</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h2>Python Libraries</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="no-bullets text">
+                        <li>
+                            <span class="skill-title">Keras</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="no-bullets text">
+                        <li>
+                            <span class="skill-title">Pytorch</span>
+                            <span class="skill-score">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid grey" id="experiences">
         <div class="content">
             <h1 class="text-center">Experiences</h1>
             <hr class="special">
-            <h2>Education</h2>
-            <div class="row" style="margin-top: 3vh;">
-                <div class="col-sm-4">
-                    <h3>Columbia University</h3>
-                    <div class="text">Aug 2020 - May 2024</div>
-                    <div class="text">New York City, NY</div>
-                </div>
-                <div class="col-sm-8 text"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veniam inventore sed non. Expedita fugit nihil voluptas optio deleniti facere.</div>
-            </div>
+            <h2>Academic Research</h2>
             <div class="row">
                 <div class="col-sm-4">
-                    <h3>Georgia Institute of Technology</h3>
-                    <div class="text">Aug 2018 - May 2020</div>
-                    <div class="text">Atlanta, GA</div>
+                    <h3> Bioinformatics and Bioimaging Lab</h3>
+                    <div class="text">June 2019 – July 2019</div>
+                    <div class="text">Georgia Institute of Technology</div>
                 </div>
-                <div class="col-sm-8 text"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, harum fugit. Et obcaecati, sunt unde vel architecto praesentium reprehenderit nulla, incidunt atque, laboriosam blanditiis minima ipsa possimus quidem eveniet autem.</div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3>Walton High School</h3>
-                    <div class="text">Aug 2016 - May 2020</div>
-                    <div class="text">Marietta, GA</div>
+                <div class="col-sm-8 text">
+                    <h3>Summer Intern</h3>
+                    <div class="text">
+                        Used Faster RCNN, You-Only-Look-Once, and other object detection algorithms to detect and classify various types of
+                        lesions (e.g. bone, liver, lymph) from assorted CT images using Keras and Tensorflow
+                    </div>
                 </div>
-                <div class="col-sm-8 text"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates neque nobis sint, placeat autem impedit officia eum blanditiis repudiandae?</div>
             </div>
             <hr>
-            <h2>Internships</h2>
-            <div class="row" style="margin-top: 3vh;">
-                <div class="col-sm-4">
-                    <h3>Columbia University</h3>
-                    <div class="text">Aug 2020 - May 2024</div>
-                    <div class="text">New York City, NY</div>
-                </div>
-                <div class="col-sm-8 text"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veniam inventore sed non. Expedita fugit nihil voluptas optio deleniti facere.</div>
-            </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <h3>Georgia Institute of Technology</h3>
-                    <div class="text">Aug 2018 - May 2020</div>
-                    <div class="text">Atlanta, GA</div>
+                    <h3>Computer Science Dept.</h3>
+                    <div class="text">Aug 2018 - Aug 2020</div>
+                    <div class="text">University of Miami</div>
                 </div>
-                <div class="col-sm-8 text"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, harum fugit. Et obcaecati, sunt unde vel architecto praesentium reprehenderit nulla, incidunt atque, laboriosam blanditiis minima ipsa possimus quidem eveniet autem.</div>
+                <div class="col-sm-8 text">
+                    <h3>Independent Study</h3>
+                    <div class="text">
+                        Compared performance of autoencoder-based neural network and feed-forward neural network in predicting stress and
+                        deformation of aortic valves under systolic pressure using MATLAB, Python, Keras, and Tensorflow
+                    </div>
+                </div>
             </div>
+            <hr>
             <div class="row">
                 <div class="col-sm-4">
-                    <h3>Walton High School</h3>
-                    <div class="text">Aug 2016 - May 2020</div>
-                    <div class="text">Marietta, GA</div>
+                    <h3>Tissue Mechanics Lab</h3>
+                    <div class="text">June 2018 – July 2018</div>
+                    <div class="text"> Georgia Institute of Technology</div>
                 </div>
-                <div class="col-sm-8 text"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates neque nobis sint, placeat autem impedit officia eum blanditiis repudiandae?</div>
+                <div class="col-sm-8 text">
+                    <h3>Summer Intern</h3>
+                    <div class="text">Used MATLAB to pre-process a collection of 176 aortic valve CT image sets, and utilized K-Means clustering algorithm 
+                        in Python to obtain geometric means of valve annulus and sinus diameter of the patient dataset.
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Tissue Mechanics Lab</h3>
+                    <div class="text">June 2017 – Aug 2017</div>
+                    <div class="text"> Georgia Institute of Technology</div>
+                </div>
+                <div class="col-sm-8 text">
+                    <h3>Summer Intern</h3>
+                    <div class="text">
+                        Used open-source machine learning codes and the direct linear transformation (DLT) algorithm to create a 3-D facial model from two 2-D images taken
+                        at different angles
+                    </div>
+                </div>
             </div>
             <hr>
             <h2>Work Experience</h2>
-            <div class="row" style="margin-top: 3vh;">
+            <div class="row">
                 <div class="col-sm-4">
                     <h3>Marietta Kumon Center</h3>
                     <div class="text">June 2019 - Jan 2020</div>
                     <div class="text">Marietta, GA</div>
                 </div>
-                <div class="col-sm-8 text"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veniam inventore sed non. Expedita fugit nihil voluptas optio deleniti facere.</div>
+                <div class="col-sm-8 text">
+                    <h3>Tutor/Grader</h3>
+                    <div class="text">I tutored K-12 students in the Kumon math and reading program</div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid blue" id="skills">
-        
-    </div>
-    <div class="container-fluid" id="projects">
-
+    <div class="container-fluid blue" id="projects">
+        <div class="content">
+            <h1 class="text-center">Projects</h1>
+            <hr class="special">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-container">
+                        <img class="modal-img" src="./imgs/cat1.jpg" alt="cat" data-modal-target="#modal1">
+                        <div class="img-overlay">
+                            <div class="text">
+                                Modal 1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-modal" id="modal1">
+                        <div class="modal-header">
+                            <div class="title">Modal Title 1</div>
+                            <button class="close-button" data-close-btn>&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ipsum ducimus distinctio delectus enim minus voluptatem odio numquam exercitationem iure, provident non laboriosam repudiandae, velit saepe culpa! Dignissimos hic quidem voluptas quae sapiente dolorem dolor! Voluptates dignissimos quo nihil perferendis odio aperiam excepturi laboriosam iste deleniti. Fuga, debitis? Nulla, id magnam! Adipisci mollitia, sint magni, natus libero iste quidem voluptas assumenda eum amet eligendi obcaecati consequatur voluptatum, tempore cumque sed nihil nostrum inventore quod delectus praesentium laborum beatae maiores. Fugiat.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-container">
+                        <img class="modal-img" src="./imgs/cat2.jpg" alt="cat" data-modal-target="#modal2">
+                        <div class="img-overlay">
+                            <div class="text">
+                                Modal 2
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-modal" id="modal2">
+                        <div class="modal-header">
+                            <div class="title">Modal Title 2</div>
+                            <button class="close-button" data-close-btn>&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ipsum ducimus distinctio delectus enim minus voluptatem odio numquam exercitationem iure, provident non laboriosam repudiandae, velit saepe culpa! Dignissimos hic quidem voluptas quae sapiente dolorem dolor! Voluptates dignissimos quo nihil perferendis odio aperiam excepturi laboriosam iste deleniti. Fuga, debitis? Nulla, id magnam! Adipisci mollitia, sint magni, natus libero iste quidem voluptas assumenda eum amet eligendi obcaecati consequatur voluptatum, tempore cumque sed nihil nostrum inventore quod delectus praesentium laborum beatae maiores. Fugiat.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-container">
+                        <img class="modal-img" src="./imgs/profile_pic.jpg" alt="cat" data-modal-target="#modal3">
+                        <div class="img-overlay">
+                            <div class="text">
+                                Modal 3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-modal" id="modal3">
+                        <div class="modal-header">
+                            <div class="title">Modal Title 3</div>
+                            <button class="close-button" data-close-btn>&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            KEKW
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="row">
+                <div class="col-sm-4">Project 4</div>
+                <div class="col-sm-4">Project 5</div>
+                <div class="col-sm-4">Project 6</div>
+            </div>
+        </div>
+        <div id="modal-overlay"></div>
     </div>
     <div class="container-fluid dark-blue" id="contact">
 
