@@ -114,24 +114,3 @@ overlay.addEventListener('click', () => {
 //   return false;
 
 // })
-
-
-// $(window).scroll(function() {
-//   var windscroll = $(window).scrollTop();
-//   if (windscroll >= 100) {
-//       // $('nav').addClass('fixed');
-//       $('.container-fluid').each(function(i) {
-//           if ($(this).position().top <= windscroll - 20) {
-//               $('#navbar a.active').removeClass('active');
-//               $('#navbar a').eq(i).addClass('active');
-//           }
-//       });
-
-//   } else {
-
-//       // $('#navbar').removeClass('fixed');
-//       $('#navbar a.active').removeClass('active');
-//       $('#navbar a:first').addClass('active');
-//   }
-
-// }).scroll();

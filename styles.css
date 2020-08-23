@@ -125,6 +125,7 @@ hr.special {
 .img-container {
     position: relative;
     width: 275px;
+    box-shadow: 0 4px 8px 3px rgba(0,0,0,0.2),0 6px 20px 3px rgba(0,0,0,0.19);
 }
 .modal-img {
     display: block;
@@ -146,15 +147,17 @@ hr.special {
     pointer-events: none;
 }
 .img-container:hover .img-overlay {
-    height: 25%;
+    height: 30%;
+    opacity: 0.7;
 }
-.img-container:hover .modal-img {
+/* .img-container:hover .modal-img {
     opacity: 0.7;
     transition: ease all 0.5s;
-}
+} */
 .img-container .text {
+    opacity: 1;
     color: white;
-    font-size: 20px;
+    font-size: 26px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -175,13 +178,14 @@ hr.special {
     background-color: white;
     width: 600px;
     max-width: 80%;
+    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2),0 6px 20px 4px rgba(0,0,0,0.19);
 }
 .my-modal.active {
     transform: translate(-50%, -50%) scale(1);
 }
 
 .modal-header {
-    padding: 10px 15px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -220,4 +224,7 @@ hr.special {
 #modal-overlay.active {
     opacity: 1;
     pointer-events: all;
+}
+#navbar .active {
+    background: lightgreen
 }
