@@ -52,7 +52,7 @@
             <h1 class="text-center">About Me</h1>
             <hr class="special">
             <div class="row">
-                <div class="col-sm-8 text" style="font-size: 15px;">
+                <div class="col-sm-9 text" style="font-size: 15px;">
                     Hi! I’m Bill Sun. I’m a first-year undergraduate student at Columbia University interested 
                     in pursuing a career at the crossroads of computer science, biomedical engineering, and 
                     healthcare. Currently, my main research interests involve the application of machine learning 
@@ -60,7 +60,7 @@
                     of web development with my understanding of machine learning to create easily-accessible and 
                     accurate diagnostic processes to assist patients afflicted with various diseases. In my free 
                     time, I enjoy cooking and playing ping pong.</div>
-                <div class="col-sm-4"><img class="img-responsive img-rounded" src="./imgs/pfp2.jpg" alt="Bill" style="box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2),0 6px 20px 4px rgba(0,0,0,0.19);"></div>
+                <div class="col-sm-3"><img class="img-responsive img-rounded" src="./imgs/pfp2.jpg" alt="Bill" style="box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2),0 6px 20px 4px rgba(0,0,0,0.19);"></div>
             </div>
             <br>
             <div class="row text-center">
@@ -255,7 +255,7 @@
                 </div>
             </div>
             <hr>
-            <h2>Python Libraries</h2>
+            <!-- <h2>Python Libraries</h2>
             <div class="row">
                 <div class="col-sm-6">
                     <ul class="no-bullets text">
@@ -285,7 +285,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="container-fluid grey" id="experiences">
@@ -381,12 +381,18 @@
                         </div>
                     </div>
                     <div class="my-modal" id="modal1">
-                        <div class="modal-header">
+                        <div class="modal-headerr">
                             <div class="title">StyleTransfer</div>
                             <button class="close-button" data-close-btn>&times;</button>
                         </div>
+                        <img src="./imgs/styletransfer1.JPG" alt="bg img">
                         <div class="modal-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ipsum ducimus distinctio delectus enim minus voluptatem odio numquam exercitationem iure, provident non laboriosam repudiandae, velit saepe culpa! Dignissimos hic quidem voluptas quae sapiente dolorem dolor! Voluptates dignissimos quo nihil perferendis odio aperiam excepturi laboriosam iste deleniti. Fuga, debitis? Nulla, id magnam! Adipisci mollitia, sint magni, natus libero iste quidem voluptas assumenda eum amet eligendi obcaecati consequatur voluptatum, tempore cumque sed nihil nostrum inventore quod delectus praesentium laborum beatae maiores. Fugiat.
+                            Web application that utilizes a deep neural network to provide a real-time means of styling user images with various famous 
+                            artwork styles (e.g. Van Gogh's Starry Night). The style transfer algorithm was taken from the tensorflow_hub library in Python.
+                            The frontend was built using HTML, CSS, and Javascript, and backend was built using Flask.
+                        </div>
+                        <div class="modal-foot">
+                            <a href="https://styletransfer1.pythonanywhere.com/">Live Demo!</a>
                         </div>
                     </div>
                 </div>
@@ -400,12 +406,19 @@
                         </div>
                     </div>
                     <div class="my-modal" id="modal2">
-                        <div class="modal-header">
+                        <div class="modal-headerr">
                             <div class="title">X-Malaria: Automated Malaria Diagnosis</div>
                             <button class="close-button" data-close-btn>&times;</button>
                         </div>
+                        <img src="./imgs/malaria2.JPG" alt="bg img">
                         <div class="modal-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ipsum ducimus distinctio delectus enim minus voluptatem odio numquam exercitationem iure, provident non laboriosam repudiandae, velit saepe culpa! Dignissimos hic quidem voluptas quae sapiente dolorem dolor! Voluptates dignissimos quo nihil perferendis odio aperiam excepturi laboriosam iste deleniti. Fuga, debitis? Nulla, id magnam! Adipisci mollitia, sint magni, natus libero iste quidem voluptas assumenda eum amet eligendi obcaecati consequatur voluptatum, tempore cumque sed nihil nostrum inventore quod delectus praesentium laborum beatae maiores. Fugiat.
+                            Web application that performs malaria diagnosis from thin blood smear images using two deep learning models. A custom-trained You-Only-Look-Once (YOLO) object detection
+                            algorithm detects and segments individual red blood cells from the entire blood smear image, and a standard convolutional neural network classifies
+                            individual red blood cells as infected or uninfected by malaria parasite. The deep learning models were developed using Keras and Tensorflow in Python. 
+                            The frontend was built using HTML, CSS, and Javascript, and backend was built using Flask.
+                        </div>
+                        <div class="modal-foot">
+                            <a href="https://malariadiagnosis.pythonanywhere.com/">Live Demo!</a>
                         </div>
                     </div>
                 </div>
@@ -419,8 +432,74 @@
                         </div>
                     </div>
                     <div class="my-modal" id="modal3">
-                        <div class="modal-header">
-                            <div class="title">Modal Title 3</div>
+                        <div class="modal-headerr">
+                            <div class="title">HeartHelper</div>
+                            <button class="close-button" data-close-btn>&times;</button>
+                        </div>
+                        <img src="./imgs/heart2.JPG" alt="bg img">
+                        <div class="modal-body">
+                            Web application that diagnoses risk of heart disease from 13 clinical characteristics (e.g. sex, age, resting blood pressire) using the Gaussian Naive Bayes algorithm,
+                            which achieved  ~90% diagnostic accuracy. The predictive models was developed using Sci-Kit Learn in Python. 
+                            The frontend was built using HTML, CSS, and Javascript, and backend was built using Flask.
+                        </div>
+                        <div class="modal-foot">
+                            <a href="https://hearthelper.pythonanywhere.com/">Live Demo!</a>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <!-- <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-container">
+                        <img class="modal-img" src="./imgs/styletransfer2.JPG" alt="turtle" data-modal-target="#modal4">
+                        <div class="img-overlay">
+                            <div class="text">
+                                Modal 4
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-modal" id="modal4">
+                        <div class="modal-headerr">
+                            <div class="title">Modal 4</div>
+                            <button class="close-button" data-close-btn>&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ipsum ducimus distinctio delectus enim minus voluptatem odio numquam exercitationem iure, provident non laboriosam repudiandae, velit saepe culpa! Dignissimos hic quidem voluptas quae sapiente dolorem dolor! Voluptates dignissimos quo nihil perferendis odio aperiam excepturi laboriosam iste deleniti. Fuga, debitis? Nulla, id magnam! Adipisci mollitia, sint magni, natus libero iste quidem voluptas assumenda eum amet eligendi obcaecati consequatur voluptatum, tempore cumque sed nihil nostrum inventore quod delectus praesentium laborum beatae maiores. Fugiat.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-container">
+                        <img class="modal-img" src="./imgs/malaria1.JPG" alt="malaria" data-modal-target="#modal5">
+                        <div class="img-overlay">
+                            <div class="text">
+                                Modal 5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-modal" id="modal5">
+                        <div class="modal-headerr">
+                            <div class="title">Modal 5</div>
+                            <button class="close-button" data-close-btn>&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ipsum ducimus distinctio delectus enim minus voluptatem odio numquam exercitationem iure, provident non laboriosam repudiandae, velit saepe culpa! Dignissimos hic quidem voluptas quae sapiente dolorem dolor! Voluptates dignissimos quo nihil perferendis odio aperiam excepturi laboriosam iste deleniti. Fuga, debitis? Nulla, id magnam! Adipisci mollitia, sint magni, natus libero iste quidem voluptas assumenda eum amet eligendi obcaecati consequatur voluptatum, tempore cumque sed nihil nostrum inventore quod delectus praesentium laborum beatae maiores. Fugiat.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-container">
+                        <img class="modal-img" src="./imgs/heart.jpg" alt="cat" data-modal-target="#modal6">
+                        <div class="img-overlay">
+                            <div class="text">
+                                Modal 6
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-modal" id="modal6">
+                        <div class="modal-headerr">
+                            <div class="title">Modal Title 6</div>
                             <button class="close-button" data-close-btn>&times;</button>
                         </div>
                         <div class="modal-body">
@@ -429,17 +508,38 @@
                     </div>
                 </div>
             
-            </div>
-            <!-- <div class="row">
-                <div class="col-sm-4">Project 4</div>
-                <div class="col-sm-4">Project 5</div>
-                <div class="col-sm-4">Project 6</div>
             </div> -->
         </div>
         <div id="modal-overlay"></div>
     </div>
     <div class="container-fluid dark-blue" id="contact">
-
+        <div class="content">
+            <div class="row">
+                <h1 class="text-center">Contact</h1>
+                <hr class="hr-white">
+                <div class="col-sm-4 text-center">
+                    <i class="fas fa-map-signs icon"></i>
+                    <div class="white">
+                        <div class="emp">Where to Find Me:</div> 1107 Midsummer Court NE, Marietta, Georgia, USA
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <i class="far fa-envelope-open icon"></i>
+                    <div class="white">
+                        <div class="emp">Email Me At:</div> bys2107@columbia.edu
+                    </div>
+                   
+                </div>
+                <div class="col-sm-4 text-center">
+                    <i class="fab fa-linkedin icon"></i>
+                    <div class="white">
+                        <div class="emp">Let's Connect:</div>
+                        <a href="https://www.linkedin.com/in/bill-sun-83ab771a5/">My Linkedin Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
     <script src="./app.js"></script>
 </body>

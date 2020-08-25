@@ -66,16 +66,18 @@ html {
     background-color: #d4ddd2;
 }
 .dark-blue {
-    background-color: #649c98;
+    background-color: #005a79;
 }
 .container-fluid {
-    padding: 6vh 10vw;
+    padding: 9vh 10vw;
 }
 .container-fluid .row {
     margin-bottom: 30px;
 }
 .container-fluid h1 {
     font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
     color: #632c72;
 }
 .container-fluid h2 {
@@ -93,6 +95,9 @@ html {
 }
 hr.special {
     border: 2px solid #632c72;
+}
+hr.hr-white {
+    border: 2px solid white;
 }
 .text {
     font-size: 15px; 
@@ -126,6 +131,7 @@ hr.special {
     position: relative;
     width: 275px;
     box-shadow: 0 4px 8px 3px rgba(0,0,0,0.2),0 6px 20px 3px rgba(0,0,0,0.19);
+    
 }
 .modal-img {
     display: block;
@@ -173,7 +179,7 @@ hr.special {
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     border: 1px solid black;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     z-index: 9;
     background-color: white;
     width: 600px;
@@ -184,31 +190,49 @@ hr.special {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.modal-header {
-
+.modal-headerr {
+    padding: 10px 15px;
+    border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    background: #b1ecff;
 }
 
-.modal-header .title {
-    font-size: 1.25rem;
+.modal-headerr .title {
     font-weight: bold;
+    font-size: 20px;
+    color: #000080;
 }
 
-.modal-header .close-button {
+.modal-headerr .close-button {
     cursor: pointer;
     border: none;
     outline: none;
     background: none;
-    font-size: 1.5rem;
+    font-size: 30px;
 }
-
+.my-modal img {
+    width: 100%;
+    height: auto;
+}
 .modal-body {
     padding: 10px 15px;
 }
-
+.modal-foot {
+    background: #000080;
+    padding: 10px 15px;
+}
+.modal-foot a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.modal-foot a:hover {
+    color: #b1ecff;
+    transition: ease all 0.5s;
+}
 #modal-overlay {
     position: fixed;
     opacity: 0;
@@ -227,4 +251,32 @@ hr.special {
 }
 #navbar .active {
     background: lightgreen
+}
+
+#contact h1 {
+    color: white;
+}
+#contact .white {
+    font-size: 15px; 
+    line-height: 1.5;
+    color: white;
+}
+#contact .icon {
+    font-size: 64px; 
+    color: white;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+#contact .emp {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 24px;
+}
+#contact a {
+    text-decoration: none;
+    color: white;
+}
+#contact a:hover {
+    color:skyblue;
+    transition: ease all 0.5s;
 }
