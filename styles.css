@@ -220,17 +220,17 @@ hr.hr-white {
     padding: 10px 15px;
 }
 .modal-foot {
-    background: #000080;
+    background: #b1ecff;
     padding: 10px 15px;
 }
 .modal-foot a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: #000080;
 }
 .modal-foot a:hover {
-    color: #b1ecff;
+    color: #00d10a;
     transition: ease all 0.5s;
 }
 #modal-overlay {
