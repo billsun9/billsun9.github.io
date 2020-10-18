@@ -7,6 +7,7 @@ export function update() {
     if (onSnake(food)) {
         growSnake(GROW_RATE);
         food = getRandomFoodPosition();
+        updateScore();
     }
 }
 
@@ -31,4 +32,11 @@ function randomGridPosition() {
         x: Math.floor(Math.random() * 21)+1, // 21 is grid size
         y: Math.floor(Math.random() * 21)+1 // 21 is grid size
     }
+}
+
+function updateScore() {
+    let curScore = document.querySelector('#score span');
+    let curScoreVal = parseInt(curScore.textContent);
+    curScoreVal += 25;
+    curScore.textContent = curScoreVal;
 }
