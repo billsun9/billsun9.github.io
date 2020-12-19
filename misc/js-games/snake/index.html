@@ -6,9 +6,19 @@
     <title>Snake</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./game.js" defer type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" 
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" 
+    crossorigin="anonymous" />
 </head>
 <body>
-    <div id="score">Score: <span>0</span></div>
+    <div id="score-and-title">
+        <div id="snake-title"> 
+            <i class="fas fa-dragon"></i> 
+            Snake! 
+            <i class="fas fa-dragon"></i>
+        </div>
+        <div id="snake-score">Score: <span>0</span></div>
+    </div>
     <div id="game-board"></div>
 </body>
 </html>

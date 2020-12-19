@@ -9,19 +9,30 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: lightslategray;
+    background-color:#003300;
 }
 
-#score {
+#score-and-title {
     background-color: lightgreen;
     width: 90vmin;
     height: 10vmin;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+#snake-title, #snake-score {
+    font-size: 24px;
+    padding: 0px 24px;
+}
+#snake-title {
+    color:#6600ff;
+    font-size: 40px;
+}
+#snake-score span {
+    font-weight: bolder;
 }
 #game-board {
-    background-color: #CCC;
+    background-color: #009900;
     width: 90vmin;
     height: 90vmin;
     display: grid;
@@ -30,10 +41,10 @@ body {
 
 }
 .snake {
-    background-color: hsl(200,100%, 50%);
+    background-color: rgb(153, 212, 241);
     border: .25vmin solid black;
 }
 .food {
-    background-color: hsl(50,100%, 50%);
+    background-color:#e60000;
     border: .25vmin solid black;
 }
