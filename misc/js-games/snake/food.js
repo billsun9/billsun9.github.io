@@ -35,7 +35,7 @@ function randomGridPosition() {
 }
 
 function updateScore() {
-    let curScore = document.querySelector('#score span');
+    let curScore = document.querySelector('#snake-score span');
     let curScoreVal = parseInt(curScore.textContent);
     curScoreVal += 25;
     curScore.textContent = curScoreVal;
